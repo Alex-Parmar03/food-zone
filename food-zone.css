@@ -174,7 +174,6 @@ table{
 }
 .quote-main{
     box-shadow: 0 8px 12px 0 rgb(51 51 51 / 40%);
-    margin-bottom: 20px;
 }
 .quote-main img{
     width: 100%;
@@ -182,6 +181,20 @@ table{
 .quote-text{
     border-left: 5px solid lightseagreen;
     padding: 20px;
+}
+.scroll-up{
+    background: lightseagreen;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.scroll-up img{
+    transform: rotate(-90deg);
+    font-size: 2px;
 }
 @media (max-width:768px) {
     .text{
@@ -192,5 +205,8 @@ table{
 @media (max-width:992px) {
     .form{
         position: relative;
+    }
+    .quote-main{
+        margin-bottom: 20px;
     }
 }
