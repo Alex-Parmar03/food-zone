@@ -10,7 +10,7 @@ body{
 .cta{
     margin: 20px 0px;
 }
-a{
+main a{
     text-decoration: none;
     padding: 15px 20px;
     background: pink;
@@ -20,12 +20,51 @@ a{
     font-weight: bold;
     transition: all 0.5s;
 }
-a:hover{
+main a:hover{
     background: darkcyan;
     color: white;
 }
 h1, h2, h3, h4, h5, h6, p{
     padding-bottom: 20px;
+}
+
+/* .show{
+    position: absolute;
+    background: white;
+    top: 86px;
+    z-index: 1;
+    width: 80%;
+    right: 0;
+    transition: all 1s;
+} */
+.navbar{
+    background: pink;
+}
+.nav-link{
+    color: black;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item a::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 0px;
+    background: darkcyan;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+}
+.nav-item:hover a::after{
+    width: 100%;
+}
+.navbar-brand img{
+    filter: invert(1);
+}
+
+.hero-slider{
+    position: relative;
 }
 .text-with__image{
     margin: 10px 0px;
@@ -104,12 +143,43 @@ h1, h2, h3, h4, h5, h6, p{
 .card-block:hover .card__text{
     bottom: 100px;
 }
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+.footer-main{
+    background: pink;
+}
+.foot-note{
+    padding: 0px;
+    margin: 0px;
+}
+table{
+    width: 100%;
+}
+.table-data th{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.table-data td{
+    padding: 10px;
+}
+.table-data tr:nth-child(odd){
+    background: lightseagreen;
+}
+
 @media (max-width:768px) {
-    .form{
-        position: relative;
-    }
     .text{
         font-size: 0.5rem;
         padding: 5px;
+    }
+}
+@media (max-width:992px) {
+    .form{
+        position: relative;
     }
 }
