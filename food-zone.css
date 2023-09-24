@@ -175,7 +175,7 @@ table{
 .quote-main{
     box-shadow: 0 8px 12px 0 rgb(51 51 51 / 40%);
 }
-.quote-main img{
+.image-100 img{
     width: 100%;
 }
 .quote-text{
@@ -185,16 +185,18 @@ table{
 .scroll-up{
     background: lightseagreen;
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
 }
-
-.scroll-up img{
-    transform: rotate(-90deg);
-    font-size: 2px;
+.big-image-quote{
+    position: relative;
+    bottom: 80px;
+    background: pink;
+    padding: 40px;
+    box-shadow: 0 8px 12px 0 rgb(51 51 51 / 40%);
 }
 @media (max-width:768px) {
     .text{
