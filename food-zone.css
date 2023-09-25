@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .nav-item{
     position: relative;
+    width: max-content;
 }
 .nav-item a::after{
     content: '';
